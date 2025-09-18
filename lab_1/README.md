@@ -8,7 +8,7 @@
     1. Розробили першу програму використовуючи Python.
     1. Отримано наступні результати запуску програми: ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/main/picture/Знімок%20екрана%202025-09-15%20135156.png)
     1. Отримано наступні результати вже з комірки: ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-09-18%20123710.png)
-    1. Отримано наступні результати вже з запущиними усіма комірками і з типом Markdown: ![Скріншот]()
+    1. Отримано наступні результати вже з запущиними усіма комірками і одна з них з типом Markdown: ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-09-18%20131206.png)
     1. Навчилися творювати перші програми, а також працювати з VSC і Github.
 
 ---
