@@ -24,6 +24,7 @@
     1. Як розписав про основи Python ChatGPT: ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/12.png)  ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/13.png)  ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/14.png)
 
 Сама програма [тут](Python_programming_basics.ipynb)
+Завдання лекції [тут](Lecture.ipynb)
 ---
 ### Висновок:
 - У роботі було освоєно знання про основи програмування на Python і вміння правильно застосовувати основні типи даних;
