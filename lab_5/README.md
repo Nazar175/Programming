@@ -10,11 +10,11 @@
 * Результати виконання завдання:
     1. Додайно генератор випадкових чисел та викликано метод deposit та withdraw:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/16.png)
     ---
-    1. Створено ще один метод у класі Vehicle та викликано його з обєкта класу Car:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/17.png)
+    2. Створено ще один метод у класі Vehicle та викликано його з обєкта класу Car:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/17.png)
     ---
-    1. Створено клас Fish у якого не буде метода speak, через те що клас Animal вже має метод Speak() і він містить pass - Fish успадковує цей метод:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/18.png)
+    3. Створено клас Fish у якого не буде метода speak, через те що клас Animal вже має метод Speak() і він містить pass - Fish успадковує цей метод:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/18.png)
     ---
-    1. Використання парадигм для створення простої гри:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/19.png)
+    4. Використання парадигм для створення простої гри:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/19.png)
     ---
     Сама програма з виконаними завданнями [тут](paradigm.ipynb)
     ---
