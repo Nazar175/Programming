@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "poetry_lab"
+version = "0.1.0"
+description = ""
+authors = ["student"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
