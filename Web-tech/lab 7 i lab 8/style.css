@@ -1,0 +1,85 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475");
+    background-size: cover;
+    text-align: center;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: rgb(160, 54, 54);
+    text-shadow: 3px 3px 5px gray;
+    margin-bottom: 40px;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.product{
+    width: 250px;
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 15px;
+    border: 5px solid gray;
+    outline: 5px solid lightgray;
+    border-radius: 10px;
+}
+.product img{
+    width: 100%;
+    height: 180px;
+}
+.product h3{
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 3px gray;
+}
+.product a{
+    text-decoration: none;
+    color: darkblue;
+}
+.product a:hover{
+    text-decoration: underline;
+}
+span{
+    background: yellow;
+    color: red;
+    font-weight: bold;
+    padding: 3px;
+}
+h2{
+    margin-top: 60px;
+}
+table{
+    width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+}
+th, td{
+    border: 2px solid gray;
+    padding: 10px;
+}
+th{
+    background: lightgray;
+}
+tr:nth-child(even){
+    background: #f2f2f2;
+}
+a:link{
+    color: black;
+    font-style: italic;
+    text-decoration: none;
+}
+a:visited{
+    color: purple;
+    font-style: italic;
+    text-decoration: underline;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: green;
+}
