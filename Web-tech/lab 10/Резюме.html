@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Моє резюме</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f1f3f6;
+            font-family: Arial;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        main {
+            display: flex;
+            margin: 20px;
+        }
+
+        .content {
+            width: 75%;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #c5e7ff;
+            padding: 20px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            color: #0066cc;
+        }
+
+        .block {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        img.main-photo {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .inline-images {
+            text-align: center;
+        }
+
+        .inline-images img {
+            width: 200px;
+            height: 150px;
+            margin: 5px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Назар Гучко</h1>
+</header>
+
+<nav>
+    <a href="#">Головна</a>
+    <a href="#">Освіта</a>
+    <a href="#">Навички</a>
+    <a href="#">Контакти</a>
+</nav>
+
+<main>
+    <div class="content">
+        <div class="block">
+            <h2>Особисті дані</h2>
+
+            <img src="../picture/my_photo.jpg"
+                 alt="Моє фото"
+                 class="main-photo"
+                 width="200"
+                 height="250">
+
+            <ul>
+                <li>Рік народження: 2007</li>
+                <li>Місто: Львів</li>
+                <li>Спеціальність: Комп’ютерні науки</li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <h2>Освіта</h2>
+            <ol>
+                <li>
+                    ВСП «Фаховий коледж інформаційних технологій
+                    НУ «Львівська політехніка»
+                </li>
+            </ol>
+        </div>
+
+        <div class="block">
+            <h2>Захоплення</h2>
+
+            <p>
+                Я цікавлюся програмуванням, люблю працювати з вебсайтами, займатися спортом та постійно вдосконалюю свої навички.
+            </p>
+
+            <div class="inline-images">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsF4VAQPY941oZw3FOjB6q30ry_-lDkbkB3A&s">
+                <img src="https://fact-news.com.ua/wp-content/uploads/depositphotos_446517458-stock-photo-toddler-washing-hands-soap-prevent-3.webp">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVb1kfVx6rFOtOl1ZXU7jPtoI3-4j5Yvw7Xg&s">
+            </div>
+        </div>
+    </div>
+    <aside class="sidebar">
+        <h2>Додаткова інформація</h2>
+        <p>Навички:</p>
+        <ul>
+            <li>HTML / CSS</li>
+            <li>Основи C#</li>
+            <li>Робота з ПК</li>
+        </ul>
+    </aside>
+</main>
+
+<footer>
+    <p>Автор: Назар Гучко</p>
+    <p>Email: nhuchko2023@itcollege.lviv.ua</p>
+    <p>Telegram: @Naz146</p>
+</footer>
+
+</body>
+</html>

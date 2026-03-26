@@ -1,0 +1,26 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+.photo {
+    background-color: #ccc;
+    height: 100px;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.photo:hover {
+    background-color: #999;
+    transform: scale(1.05);
+}
