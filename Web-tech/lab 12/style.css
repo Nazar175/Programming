@@ -51,6 +51,14 @@ nav a:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+/* Зображення в блоках */
+.block img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
 /* Банер */
 .banner {
     text-align: center;
