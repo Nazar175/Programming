@@ -54,7 +54,7 @@ img {
     padding: 16px 0 28px;
 }
 
-/* Верхня навігаційна панель (однакова для всіх сторінок) */
+/* Верхня навігаційна панель */
 .site-header {
     background-color: var(--header-bg);
     color: #ffffff;
@@ -556,7 +556,7 @@ img {
     background-color: #f2faff;
 }
 
-/* Суцільний формат тексту для сторінки умов */
+/* Формат тексту для сторінки умов */
 .terms-article {
     max-width: 980px;
     margin: 0 auto;
