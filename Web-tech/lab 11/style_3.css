@@ -16,9 +16,13 @@ body {
     padding: 30px 50px;
     border-radius: 10px;
     font-size: 20px;
-    transition: 0.3s;
 }
 
-.center-box:hover {
+.center-box span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.center-box:hover span {
     transform: scale(1.2);
 }
