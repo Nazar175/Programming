@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Товари</title>
+	<style>
+		#gallery {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+		#gallery img {
+			width: 300px;
+			height: 200px;
+			object-fit: contain;
+		}
+	</style>
+	<script>
+		var photosCount = 4;
+		var currentPhotoIndex = 1;
+		function showNextPhoto() {
+			currentPhotoIndex++;
+			if (currentPhotoIndex > photosCount) {currentPhotoIndex = 1;}
+
+			var elem = document.getElementById("currentPhoto");
+			elem.src = "images/photo" + currentPhotoIndex + ".webp";
+		}
+		function addNextPhoto() {
+			var newImage = document.createElement("img");
+
+			currentPhotoIndex++;
+			if (currentPhotoIndex > photosCount) {currentPhotoIndex = 1;}
+
+			newImage.src = "images/photo" + currentPhotoIndex + ".webp";
+			newImage.width = 300;
+			newImage.height = 200;
+
+			var container = document.getElementById("gallery");
+			container.appendChild(newImage);
+		}
+	</script>
+</head>
+<body style="background-color: lightblue;">
+	<div id="gallery">
+		<img id="currentPhoto" src="images/photo1.webp" width="300" height="200" />
+	</div>
+	<button onclick="showNextPhoto()">Наступне фото</button>
+	<button onclick="addNextPhoto()">Додайте наступне фото</button>
+</body>
+</html>
