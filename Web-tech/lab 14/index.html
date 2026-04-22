@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Вікна, фрейми, діалогові вікна</title>
+    <script src="demo.js"></script>
+</head>
+<body>
+    <h2>Робота з вікнами</h2>
+    <button onclick="showMessage()">Натисни тут</button>
+    <button onclick="openNewWindow()">Відкрити вікно</button>
+    <br><br>
+    <button onclick="confirmMessage()">Перевірка</button>
+    <br><br>
+    <button onclick="promptMessage()">Введіть ім'я</button>
+    <br><br>
+    <iframe src="https://itcollege.lviv.ua/" width="300" height="200"></iframe>
+
+    <h2>Обробка форм та подій</h2>
+    <form>
+        <input type="text" id="userName" placeholder="Ваше ім'я">
+        <button type="button" onclick="greetUser()">Привітати</button>
+    </form>
+    <br>
+    <input type="text" id="inputField" placeholder="Щось введіть" oninput="showInput()">
+    <br><br>
+    <form onsubmit="handleSubmit(event)">
+        <input type="text" id="dataInput" placeholder="Введіть щось">
+        <button type="submit">Надіслати</button>
+    </form>
+</body>
+</html>
