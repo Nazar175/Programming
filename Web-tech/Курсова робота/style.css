@@ -195,6 +195,46 @@ img {
     height: 100%;
 }
 
+.burger-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    border-radius: 10px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.burger-toggle img {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.mobile-menu__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mobile-menu__item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.mobile-menu__icon {
+    width: 24px;
+    text-align: center;
+    font-size: 19px;
+}
+
 /* Промо-банер головної сторінки */
 .hero {
     position: relative;
@@ -766,13 +806,104 @@ img {
         width: min(var(--max-width), calc(100% - 20px));
     }
 
+    .topbar {
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 10px;
+        padding: 10px 0;
+    }
+
+    .brand {
+        order: 2;
+        flex-shrink: 0;
+    }
+
     .brand__name {
         font-size: 34px;
     }
 
-    .catalog-btn {
-        font-size: 15px;
-        padding: 9px 14px;
+    .catalog-btn,
+    .top-icons {
+        display: none;
+    }
+
+    .burger-toggle {
+        order: 1;
+        display: flex;
+        margin-left: 0;
+        flex-shrink: 0;
+    }
+
+    .search-wrap {
+        order: 3;
+        flex: 1 1 220px;
+        min-width: 0;
+    }
+
+    .mobile-menu {
+        order: 4;
+        flex: 0 0 100%;
+        margin-top: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 10px;
+        border: 1px solid transparent;
+        border-radius: 12px;
+        background-color: #2c2d32;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-8px);
+        overflow: hidden;
+        pointer-events: none;
+        transition:
+            max-height 0.32s ease,
+            opacity 0.22s ease,
+            transform 0.22s ease,
+            padding 0.22s ease,
+            border-color 0.22s ease;
+    }
+
+    .mobile-menu.mobile-menu--open {
+        max-height: 260px;
+        opacity: 1;
+        transform: translateY(0);
+        padding: 10px;
+        border-color: rgba(255, 255, 255, 0.2);
+        pointer-events: auto;
+    }
+
+    .mobile-menu__item {
+        border-radius: 8px;
+        color: #ffffff;
+        padding: 8px 10px;
+        opacity: 0;
+        transform: translateX(-8px);
+        transition:
+            background-color 0.2s ease,
+            opacity 0.22s ease,
+            transform 0.22s ease;
+    }
+
+    .mobile-menu__item:hover {
+        background-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .mobile-menu.mobile-menu--open .mobile-menu__item {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .mobile-menu.mobile-menu--open .mobile-menu__item:nth-child(1) {
+        transition-delay: 0.04s;
+    }
+
+    .mobile-menu.mobile-menu--open .mobile-menu__item:nth-child(2) {
+        transition-delay: 0.08s;
+    }
+
+    .mobile-menu.mobile-menu--open .mobile-menu__item:nth-child(3) {
+        transition-delay: 0.12s;
     }
 
     .search-wrap input {
@@ -860,8 +991,8 @@ img {
         gap: 10px;
     }
 
-    .top-icons {
-        margin-left: auto;
+    .search-wrap {
+        flex: 1 1 140px;
     }
 
     .search-wrap input {

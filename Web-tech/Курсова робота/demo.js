@@ -282,9 +282,47 @@
         });
     }
 
+    function initMobileBurgerMenu() {
+        const burgerButton = document.querySelector(".burger-toggle");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        if (!burgerButton || !mobileMenu) {
+            return;
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove("mobile-menu--open");
+            burgerButton.setAttribute("aria-expanded", "false");
+        }
+
+        burgerButton.addEventListener("click", function () {
+            const isOpen = mobileMenu.classList.toggle("mobile-menu--open");
+            burgerButton.setAttribute("aria-expanded", String(isOpen));
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!mobileMenu.contains(event.target) && !burgerButton.contains(event.target)) {
+                closeMenu();
+            }
+        });
+
+        mobileMenu.addEventListener("click", function (event) {
+            if (event.target.closest("a")) {
+                closeMenu();
+            }
+        });
+
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+    }
+
     function initPageFeatures() {
         initRegistrationTriggers();
         initMainProductsSlider();
+        initMobileBurgerMenu();
     }
 
     if (document.readyState === "loading") {
