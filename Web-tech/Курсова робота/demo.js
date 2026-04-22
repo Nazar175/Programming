@@ -213,9 +213,10 @@
 
     function initMainProductsSlider() {
         const grid = document.querySelector(".products-grid");
+        const prevButton = document.querySelector(".products-prev");
         const nextButton = document.querySelector(".products-more");
 
-        if (!grid || !nextButton) {
+        if (!grid || !prevButton || !nextButton) {
             return;
         }
 
@@ -269,6 +270,11 @@
         });
 
         renderSlide(currentSlideIndex, false);
+
+        prevButton.addEventListener("click", function () {
+            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+            renderSlide(currentSlideIndex, true);
+        });
 
         nextButton.addEventListener("click", function () {
             currentSlideIndex = (currentSlideIndex + 1) % slides.length;
