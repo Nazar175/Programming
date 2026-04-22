@@ -180,9 +180,110 @@
         });
     }
 
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", initRegistrationTriggers);
-    } else {
+    function createSeededShuffle(total, seed) {
+        const indices = Array.from({ length: total }, function (_, index) {
+            return index;
+        });
+        let state = seed >>> 0;
+
+        function random() {
+            state = (state * 1664525 + 1013904223) >>> 0;
+            return state / 4294967296;
+        }
+
+        for (let i = indices.length - 1; i > 0; i -= 1) {
+            const j = Math.floor(random() * (i + 1));
+            const temp = indices[i];
+            indices[i] = indices[j];
+            indices[j] = temp;
+        }
+
+        return indices;
+    }
+
+    function areSameOrder(first, second) {
+        if (!first || !second || first.length !== second.length) {
+            return false;
+        }
+
+        return first.every(function (value, index) {
+            return value === second[index];
+        });
+    }
+
+    function initMainProductsSlider() {
+        const grid = document.querySelector(".products-grid");
+        const nextButton = document.querySelector(".products-more");
+
+        if (!grid || !nextButton) {
+            return;
+        }
+
+        const cards = Array.from(grid.querySelectorAll(".product-card"));
+
+        if (cards.length < 2) {
+            nextButton.disabled = true;
+            return;
+        }
+
+        const baseOrder = cards.map(function (_, index) {
+            return index;
+        });
+        const shuffledOrderOne = createSeededShuffle(cards.length, 20260422);
+        const shuffledOrderTwo = createSeededShuffle(cards.length, 7772026);
+
+        if (areSameOrder(baseOrder, shuffledOrderOne)) {
+            shuffledOrderOne.reverse();
+        }
+
+        if (areSameOrder(baseOrder, shuffledOrderTwo) || areSameOrder(shuffledOrderOne, shuffledOrderTwo)) {
+            shuffledOrderTwo.push(shuffledOrderTwo.shift());
+        }
+
+        const slides = [baseOrder, shuffledOrderOne, shuffledOrderTwo];
+        let currentSlideIndex = 0;
+
+        function renderSlide(slideIndex, withAnimation) {
+            if (withAnimation) {
+                grid.classList.remove("products-grid--animating");
+                // Restart animation each time user clicks the arrow.
+                void grid.offsetWidth;
+                grid.classList.add("products-grid--animating");
+            }
+
+            const fragment = document.createDocumentFragment();
+
+            slides[slideIndex].forEach(function (cardIndex) {
+                fragment.appendChild(cards[cardIndex]);
+            });
+
+            grid.appendChild(fragment);
+            nextButton.setAttribute(
+                "aria-label",
+                `Показати наступний набір товарів (${slideIndex + 1} з ${slides.length})`
+            );
+        }
+
+        grid.addEventListener("animationend", function () {
+            grid.classList.remove("products-grid--animating");
+        });
+
+        renderSlide(currentSlideIndex, false);
+
+        nextButton.addEventListener("click", function () {
+            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+            renderSlide(currentSlideIndex, true);
+        });
+    }
+
+    function initPageFeatures() {
         initRegistrationTriggers();
+        initMainProductsSlider();
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initPageFeatures);
+    } else {
+        initPageFeatures();
     }
 })();

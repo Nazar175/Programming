@@ -250,6 +250,22 @@ img {
     gap: 18px;
 }
 
+.products-grid.products-grid--animating {
+    animation: productsGridFade 0.32s ease;
+}
+
+@keyframes productsGridFade {
+    from {
+        opacity: 0.35;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .product-card {
     width: calc((100% - 4 * 18px) / 5);
     min-width: 170px;
