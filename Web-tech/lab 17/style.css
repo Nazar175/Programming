@@ -1,0 +1,28 @@
+body {
+    font-family: Arial;
+    max-width: 600px;
+    margin: 40px auto;
+}
+.faq-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.faq-title {
+    padding: 15px;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+.faq-title:hover {
+    background: #34495e;
+}
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #f9f9f9;
+    padding: 0 15px;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
