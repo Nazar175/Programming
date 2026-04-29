@@ -1,0 +1,3 @@
+# Ignore environment variable files in OOP and all subfolders
+.env
+.env.*
