@@ -247,7 +247,6 @@
         function renderSlide(slideIndex, withAnimation) {
             if (withAnimation) {
                 grid.classList.remove("products-grid--animating");
-                // Restart animation each time user clicks the arrow.
                 void grid.offsetWidth;
                 grid.classList.add("products-grid--animating");
             }
