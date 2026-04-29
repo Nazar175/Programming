@@ -1,3 +1,6 @@
 # Ignore environment variable files in OOP and all subfolders
 .env
 .env.*
+
+__pycache__
+__pycache__*
