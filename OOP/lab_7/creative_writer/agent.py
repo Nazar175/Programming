@@ -1,5 +1,6 @@
 from google.adk.agents.llm_agent import Agent
 from google.genai.types import GenerateContentConfig
+from tools.common_tools import format_text, count_words
 
 def generate_story_prompt(theme: str, characters: int = 2) -> str:
     """
