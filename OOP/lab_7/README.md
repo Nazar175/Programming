@@ -5,7 +5,7 @@
 ---
 ## Виконання роботи:
 
-Посилання на файл з виконаними матеріалами лекцій [тут](class_work.ipynb)
+У звязку з тим що завдання з лекції були такіж як у завданні, я зробив їх один раз і для лекції і для лабараторної роботи.
 
 * Результати виконання завдання:
     1. Актуальна версія Python і Poetry:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/33.png)
@@ -18,10 +18,10 @@
     8. Протестовані AI агента через веб інтерфейс:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/39.png)
     9. Протестовано агента задавши три питання на які він відповів вірно:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/40.png)
     10. Результат додавання ще одного математичного інструменту:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/41.png)
+    11. Підтвердження роботи студенського агента через консоль:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/42.png)
+    12. Дальше потрібно було створити агента який буде писати історії залежно від базових поставлених налаштувань, але у звязку з тим що версія ADK оновилася тепер ці параметри задавати неможна, тому я зупинився на створенні самого агента без привязки до налаштувань, але він все одно може писати історії:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/43.png)
 
-    ---
-    Сама програма з виконаними завданнями [тут](paradigm.ipynb)
-    ---
+
 ---
 ### Висновок:
 - Вивчено процес створення AI агентів з використанням Google ADK та Poetry для управління залежностями проекту;
