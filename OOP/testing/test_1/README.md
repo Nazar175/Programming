@@ -5,8 +5,8 @@
 ---
 ## Виконання роботи:
 
-Посилання на файл з виконаними матеріалами лекцій [тут](1_lab)
-Фото з виконанням завдання лекції [тут](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/57.png)
+#### Посилання на файл з виконаними матеріалами лекцій [тут](1_lab)
+#### Фото з виконанням завдання лекції ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/57.png)
 
 * Результати виконання завдання:
     1. Створено і ініціалізовано Poetry і додано бібліотеки:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/54.png)
