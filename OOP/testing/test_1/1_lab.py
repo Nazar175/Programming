@@ -16,7 +16,7 @@ def count_vowels(text: str) -> int:
 class TestCountVowels(unittest.TestCase):
 
     def test_normal_text(self):
-        self.assertEqual(3, count_vowels("Привіт"))
+        self.assertEqual(2, count_vowels("Привіт"))
 
     def test_another_text(self):
         self.assertEqual(4, count_vowels("Україна"))
