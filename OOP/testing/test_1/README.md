@@ -8,7 +8,7 @@
 #### Посилання на файл з виконаними матеріалами лекцій [тут](1_lab)
 #### Фото з виконанням завдання лекції ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/57.png)
 
-* ## Результати виконання завдання згідно з завданням:
+* ## Результати виконання завдання:
     1. Створено і ініціалізовано Poetry і додано бібліотеки:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/54.png)
     ---
     2. Найпростіші тести на перевірку даних це тести які перевіряють число яке записав користувач (у нашому випадку число більше 100) на помилку.![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/55.png)
