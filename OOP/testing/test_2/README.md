@@ -6,10 +6,10 @@
 ## Виконання роботи:
 
 Посилання на файл з виконаними матеріалами лекцій [тут](2_lab)
-Скріншот виконання тестів з бібліотекою pytest по лекції [тут](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/60.png)
+Скріншот виконання тестів з бібліотекою pytest по лекції ![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/60.png)
 
 * Результати виконання завдання:
-    1. :![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/.png)
+    1. :![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/61.png)
     ---
 
     Сама програма з виконаними завданнями [тут]()
