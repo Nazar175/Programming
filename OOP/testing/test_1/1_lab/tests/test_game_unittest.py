@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from game.game import CardGame
+from game import CardGame
 
 
 class TestCardGameInitialization(unittest.TestCase):

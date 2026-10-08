@@ -1,0 +1,25 @@
+[project]
+name = "test-2"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Nazar175",email = "nhuchko2023@itcollege.lviv.ua"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["2_lab"]
+testpaths = ["2_lab/tests"]
