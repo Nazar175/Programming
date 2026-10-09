@@ -23,3 +23,7 @@ dev = [
 [tool.pytest.ini_options]
 pythonpath = ["2_lab"]
 testpaths = ["2_lab/tests"]
+markers = [
+    "unit: швидкі юніт-тести",
+    "slow: повільні тести"
+]
