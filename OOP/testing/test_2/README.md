@@ -30,13 +30,14 @@ python -m pytest -v
 У unittest тести створюються як методи класу, що успадковує unittest.TestCase, а для перевірок використовуються спеціальні методи, наприклад self.assertEqual(). У pytest можна використовувати звичайні функції з назвою test_ та оператор assert. Pytest також підтримує параметризацію і fixtures.
 
 4. Приклад використання параметризації
+```python
 import pytest
 from app import Figure
 
 @pytest.mark.parametrize("figure_type", Figure.FIGURES)
 def test_allowed_figure(figure_type):
     assert Figure(figure_type, 1).type == figure_type
-    
+```
 Цей тест перевіряє всі дозволені типи фігур за допомогою однієї функції.
 ---
 ### Висновок:
