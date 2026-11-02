@@ -1,15 +1,19 @@
-name: Python Tests and Coverage
+name: Python tests
 
 on:
   push:
   pull_request:
 
 jobs:
-  tests:
+  test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: OOP/testing/test_3/tests
+
     steps:
-      - name: Checkout repository
+      - name: Get repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -18,10 +22,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install coverage pytest pytest-cov
+        run: pip install pytest coverage pytest-cov
 
       - name: Run tests with coverage
         run: pytest --cov=app --cov-branch --cov-fail-under=90
-
-      - name: Generate XML report
-        run: coverage xml
