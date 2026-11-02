@@ -1,3 +1,4 @@
+from app import Figure, main
 import pytest
 
 from app import Figure
@@ -42,3 +43,9 @@ def test_get_angles_without_assert():
 def test_invalid_type():
     with pytest.raises(AssertionError):
         Figure("коло", 1)
+
+def test_main(capsys):
+    main()
+
+    captured = capsys.readouterr()
+    assert captured.out.strip() == "Кількість кутів: 4"
