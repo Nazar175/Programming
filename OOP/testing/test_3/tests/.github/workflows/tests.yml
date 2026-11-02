@@ -1,0 +1,27 @@
+name: Python Tests and Coverage
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install coverage pytest pytest-cov
+
+      - name: Run tests with coverage
+        run: pytest --cov=app --cov-branch --cov-fail-under=90
+
+      - name: Generate XML report
+        run: coverage xml
