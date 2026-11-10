@@ -1,0 +1,26 @@
+
+name: Additional Jobs
+
+on:
+  workflow_dispatch:
+
+jobs:
+  first_job:
+    name: Run First Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: First step
+        run: echo "First job is running"
+
+      - name: Show information
+        run: echo "This is the first task"
+
+  second_job:
+    name: Run Second Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Second step
+        run: echo "Second job is running"
+
+      - name: Show result
+        run: echo "This is the second task"
