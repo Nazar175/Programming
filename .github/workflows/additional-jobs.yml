@@ -1,4 +1,3 @@
-
 name: Additional Jobs
 
 on:
@@ -6,25 +5,25 @@ on:
 
 jobs:
   first_job:
-    name: First Job - Information
+    name: Run First Job
     runs-on: ubuntu-latest
     steps:
-      - name: Show message
+      - name: First step
         run: echo "First job is running"
 
-      - name: Show repository
-        run: echo "Repository: Programming"
+      - name: Show information
+        run: echo "This is the first task"
 
   second_job:
-    name: Second Job - Calculations
+    name: Run Second Job
     runs-on: ubuntu-latest
     steps:
-      - name: Calculate numbers
-        run: echo "10 + 20 = 30"
+      - name: Second step
+        run: echo "Second job is running"
 
       - name: Show result
-        run: echo "Calculation completed"
-
+        run: echo "This is the second task"
+  
   third_job:
     name: Third Job - Python
     runs-on: ubuntu-latest
