@@ -14,7 +14,8 @@
     2. Налаштовано тригери, встановлення залежностей та запуск тестів:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/82.png)
     3. Результат ручного запуску Workflow:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/83.png)
     4. Виконано робота з налаштуванням Cron для автоматичного запуску Workflow:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/84.png)
-    5. 
+    5. Створення Workflow з двома завданнями:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/85.png)
+    6. 
     ---
 
     Сама програма з виконаними завданнями [тут](/OOP/testing/test_5/tests/)
