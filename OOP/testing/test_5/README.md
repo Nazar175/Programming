@@ -17,6 +17,7 @@
     5. Створення Workflow з двома завданнями:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/85.png)
     6. Добавлено ще два завдання в Workflow:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/86.png)
     7. Зроблена своя умова виконання для запуску завдання:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/87.png)
+    8. Добавлено Badge для Workflow у корінний README:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/88.png)
     ---
 
     Сама програма з виконаними завданнями [тут](/OOP/testing/test_5/tests/)
