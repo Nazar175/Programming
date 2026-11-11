@@ -33,7 +33,7 @@ jobs:
           pip install flask pytest pytest-cov
 
       - name: Run Python tests with coverage
-        working-directory: OOP/testing/tests/test_5
+        working-directory: OOP/testing/test_5/tests
         run: |
           pytest --cov=app --cov-report=xml test_app.py -v
 
