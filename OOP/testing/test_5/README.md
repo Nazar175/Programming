@@ -10,6 +10,8 @@
 #### Для виконання лабараторної роботи було взято файли з попередньої роботи для цього завдання з GiyHub Actaions.
 
 * Результати виконання завдання:
+[![Python application](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml/badge.svg)](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml)
+
     1. Створено GitHub Action workflow в репозиторії:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/81.png)
     2. Налаштовано тригери, встановлення залежностей та запуск тестів:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/82.png)
     3. Результат ручного запуску Workflow:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/83.png)
@@ -19,7 +21,8 @@
     7. Зроблена своя умова виконання для запуску завдання:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/87.png)
     8. Добавлено Badge для Workflow у корінний README:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/88.png)
     9. Результат виконання Codecov:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/89.png)
-    [![Python application](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml/badge.svg)](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml)
+    
+    [![codecov](https://codecov.io/gh/Nazar175/Programming/graph/badge.svg?token=6AN8ZD5613)](https://codecov.io/gh/Nazar175/Programming)
     ---
 
     Сама програма з виконаними завданнями [тут](/OOP/testing/test_5/tests/)
