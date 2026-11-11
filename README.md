@@ -1,4 +1,3 @@
-[![Python application](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml/badge.svg)](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml)
 
 # 👨‍💻 Моє портфоліо
 

@@ -19,7 +19,7 @@
     7. Зроблена своя умова виконання для запуску завдання:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/87.png)
     8. Добавлено Badge для Workflow у корінний README:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/88.png)
     9. Результат виконання Codecov:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/89.png)
-    
+    [![Python application](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml/badge.svg)](https://github.com/Nazar175/Programming/actions/workflows/python-app.yml)
     ---
 
     Сама програма з виконаними завданнями [тут](/OOP/testing/test_5/tests/)
