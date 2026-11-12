@@ -8,11 +8,11 @@
 Посилання на файл з виконаними матеріалами лекцій [тут](/OOP/testing/test_4/lecture/)
 
 * Результати виконання завдання:
-    1. Додано перевірку порожнього списку та пошкоджений JSON:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture76/.png)
-    2. Додано тест, який перевіряє два завдання та перевіряє їх порядок в базі даних:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture77/.png)
-    3. Додано тест для POST-запиту без поля 'title':![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture78/.png)
-    4. Додано тест для маршруту DELETE:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture79/.png)
-    5. Результат виконання усіх тестів:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture80/.png)
+    1. Додано перевірку порожнього списку та пошкоджений JSON:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/76.png)
+    2. Додано тест, який перевіряє два завдання та перевіряє їх порядок в базі даних:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/77.png)
+    3. Додано тест для POST-запиту без поля 'title':![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/78.png)
+    4. Додано тест для маршруту DELETE:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/79.png)
+    5. Результат виконання усіх тестів:![Скріншот](https://raw.githubusercontent.com/Nazar175/Programming/refs/heads/main/picture/80.png)
 
 #### Команди встановлення залежностей і запуску тестів: pip install flask pytest
 
